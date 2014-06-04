@@ -631,6 +631,11 @@ public class TFM_PlayerListener implements Listener
                 }
             }
         }
+        if (command.contains("175:"))
+        {
+        event.setCancelled(true);
+        playerMsg("If you are trying to get a double flower use creative.", ChatColor.BLUE);
+        }
     }
 
     @EventHandler(priority = EventPriority.NORMAL)
