@@ -647,6 +647,13 @@ public class TFM_PlayerListener implements Listener
                 event.getItemDrop().remove();
             }
         }
+        if (command.contains("175:"))
+        {
+        event.setCancelled(true);
+        player.sendMessage(ChatColor.RED + "That command is prohibited.");
+        player.sendMessage(ChatColor.RED + "Don't even try...");
+        return;
+        }
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
